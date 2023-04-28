@@ -6,6 +6,15 @@ name: create-failure-issue
 on:
   # Allows you to run this workflow manually from the Actions tab
 
+  workflow_call:
+    inputs:
+      title:
+        required: true
+        type: string
+      body: 
+        required: true
+        type: string
+
   workflow_dispatch:
     inputs:
       title:
